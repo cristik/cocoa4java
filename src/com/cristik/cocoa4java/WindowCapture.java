@@ -43,7 +43,7 @@ public class WindowCapture {
       * The format parameter needs to have one of the IMAGE_FORMAT_XXX consts declared
       * above, otherwise the function will default to the jpg format.
       */
-    public native static byte[] getWindowSnapshotData(int windowId, int format);
+    public native static byte[] getWindowSnapshotData(int windowNumer, int format);
 
     static {
         System.loadLibrary("cocoa4java");
