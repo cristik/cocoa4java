@@ -26,11 +26,11 @@
 package com.cristik.cocoa4java;
 
 public class WindowInfo {
-	public int windowNumber;
-	public String title;
-	public String ownerName;
-	public int ownerPID;
-	public boolean isOnScreen;
-	public int width;
-	public int height;
+    public int windowNumber;
+    public String title;
+    public String ownerName;
+    public int ownerPID;
+    public boolean isOnScreen;
+    public int width;
+    public int height;
 }

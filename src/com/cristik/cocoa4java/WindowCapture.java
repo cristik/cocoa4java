@@ -28,14 +28,14 @@ import java.util.List;
 import java.util.Map;
 
 public class WindowCapture {
-	public static final int IMAGE_FORMAT_PNG = 1;
-	public static final int IMAGE_FORMAT_JPEG = 2;
-	public static final int IMAGE_FORMAT_TIFF = 3;
+    public static final int IMAGE_FORMAT_PNG = 1;
+    public static final int IMAGE_FORMAT_JPEG = 2;
+    public static final int IMAGE_FORMAT_TIFF = 3;
 
-	/**
-	  *  Returns a json encoded dictionary with information about the windows
-	  *  corresponding to the given PID. Pass -1 to obtain all windows in system
-	  */
+    /**
+      *  Returns a json encoded dictionary with information about the windows
+      *  corresponding to the given PID. Pass -1 to obtain all windows in system
+      */
     public native static WindowInfo[] findWindowsForPID(int pid);
 
     /**
@@ -46,6 +46,6 @@ public class WindowCapture {
     public native static byte[] getWindowSnapshotData(int windowId, int format);
 
     static {
-    	System.loadLibrary("cocoa4java");
+        System.loadLibrary("cocoa4java");
     }
 }
